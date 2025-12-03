@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spinspin - Retro Superfuture Blog von Spinelli</title>
+    <meta name="description" content="Ein retro superfuture Blog über Vintage Tech, Synthesizer, VHS Aesthetics und DIY Electronics von Spinelli. Entdecke die Ästhetik von Kassetten, Mischpulten und Retro-Hardware.">
+    <meta name="keywords" content="retro tech, superfuture, vintage tech, synthesizer, VHS aesthetic, kassetten, mischpult, circuit bending, teenage engineering, DIY electronics, spinelli blog">
+    <meta name="author" content="Spinelli">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="spinspin - Retro Superfuture Blog">
+    <meta property="og:description" content="Ein retro superfuture Blog über Vintage Tech, Synthesizer und VHS Aesthetics von Spinelli">
+    <meta property="og:url" content="https://spinspinelli.github.io/spinspin-blog/">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="spinspin - Retro Superfuture Blog">
+    <meta name="twitter:description" content="Ein retro superfuture Blog über Vintage Tech und Synthesizer">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="vhs-overlay"></div>
+    <div class="scanlines"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">spinspin</span>
+                <span class="logo-dot"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">Über Mich</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="hero">
+            <h1 class="glitch" data-text="spinspin">spinspin</h1>
+            <p class="subtitle">ein retro superfuture blog von spinelli</p>
+            <div class="circuit-line"></div>
+        </header>
+
+        <section class="blog-grid">
+            <article class="blog-card" data-color="blue">
+                <div class="card-inner">
+                    <div class="card-header">
+                        <span class="date">03.12.2025</span>
+                        <span class="tag">News</span>
+                    </div>
+                    <h2>New Release in the making</h2>
+                    <p></p>
+                    <div class="card-footer">
+                        <span class="author">von Spinelli</span>
+                        <a href="#" class="read-more">Weiterlesen →</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="visitor-counter">
+                <span class="counter-label">Besucher:</span>
+                <span class="counter-display" id="goatcounter-visitors">---</span>
+            </div>
+            <p>&copy; 2025 spinspin by Spinelli</p>
+            <div class="footer-circuit"></div>
+        </div>
+    </footer>
+
+    <!-- GoatCounter Analytics -->
+    <script data-goatcounter="https://spinspinelli.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+    
+    <!-- Visitor Counter Display -->
+    <script>
+        // Zeigt die Besucherzahl an
+        async function updateVisitorCount() {
+            try {
+                const response = await fetch('https://spinspinelli.goatcounter.com/counter//.json');
+                const data = await response.json();
+                const count = data.count || 0;
+                document.getElementById('goatcounter-visitors').textContent = count.toLocaleString('de-DE');
+            } catch (error) {
+                console.log('Counter wird geladen...');
+            }
+        }
+        
+        // Nach 2 Sekunden die Zahl aktualisieren (damit der neue Besuch gezählt wurde)
+        setTimeout(updateVisitorCount, 2000);
+    </script>
+</body>
+</html>

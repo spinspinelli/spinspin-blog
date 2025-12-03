@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spinspinelli.github.io/spinspin-blog/sitemap.xml
