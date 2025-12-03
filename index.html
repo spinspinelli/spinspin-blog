@@ -91,10 +91,6 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="visitor-counter">
-                <span class="counter-label">Besucher:</span>
-                <span class="counter-display" id="goatcounter-visitors">---</span>
-            </div>
             <p>&copy; 2025 spinspin by Spinelli</p>
             <div class="footer-circuit"></div>
         </div>
@@ -104,22 +100,6 @@
     <script data-goatcounter="https://spinspinelli.goatcounter.com/count"
             async src="//gc.zgo.at/count.js"></script>
     
-    <!-- Visitor Counter Display -->
-    <script>
-        // Zeigt die Besucherzahl an
-        async function updateVisitorCount() {
-            try {
-                const response = await fetch('https://spinspinelli.goatcounter.com/counter//.json');
-                const data = await response.json();
-                const count = data.count || 0;
-                document.getElementById('goatcounter-visitors').textContent = count.toLocaleString('de-DE');
-            } catch (error) {
-                console.log('Counter wird geladen...');
-            }
-        }
-        
-        // Nach 2 Sekunden die Zahl aktualisieren (damit der neue Besuch gezählt wurde)
-        setTimeout(updateVisitorCount, 2000);
-    </script>
+
 </body>
 </html>
