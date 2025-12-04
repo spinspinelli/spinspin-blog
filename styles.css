@@ -334,6 +334,18 @@ body::after {
     flex-direction: column;
 }
 
+/* Klickbarer Link über der Kassette */
+.blog-card .cassette-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 280px;
+    z-index: 15;
+    cursor: pointer;
+    display: block;
+}
+
 /* Cassette image container */
 .blog-card::before {
     content: '';
