@@ -448,7 +448,7 @@ body::after {
     letter-spacing: -0.02em;
     text-transform: none;
     text-align: center;
-    text-shadow: none;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background: transparent;
     backdrop-filter: none;
     font-family: 'ERASER', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', sans-serif;
@@ -755,6 +755,24 @@ body::after {
         grid-template-columns: 1fr;
     }
     
+    .blog-card {
+        min-height: 450px;
+    }
+    
+    .blog-card::before {
+        height: 280px;
+    }
+    
+    .card-inner {
+        padding-top: 310px;
+    }
+    
+    .blog-card h2 {
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    }
+    
     .hero h1 {
         font-size: 3rem;
     }
@@ -791,12 +809,23 @@ body::after {
         font-size: 0.8rem;
     }
     
+    .blog-card {
+        min-height: 480px;
+    }
+    
+    .blog-card::before {
+        height: 300px;
+    }
+    
     .blog-card h2 {
         font-size: 1.2rem;
+        margin-top: 0.75rem;
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
     }
     
     .card-inner {
         padding: var(--spacing-md);
+        padding-top: 330px;
     }
     
     .about-text h2 {
