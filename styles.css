@@ -363,6 +363,15 @@ body::after {
         0 1px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Individuelle Kassettenbilder für verschiedene Posts */
+.blog-card:nth-child(1)::before {
+    background-image: url('kassette5.jpg');
+}
+
+.blog-card:nth-child(2)::before {
+    background-image: url('kasette.jpg');
+}
+
 .blog-card::after {
     display: none;
 }
