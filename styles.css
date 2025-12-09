@@ -365,15 +365,15 @@ body::after {
 
 /* Individuelle Kassettenbilder für verschiedene Posts */
 .blog-card:nth-child(1)::before {
-    background-image: url('kassette5.jpg');
+    background-image: url('maxell_lilac_kassette.jpeg');
 }
 
 .blog-card:nth-child(2)::before {
-    background-image: url('kasette.jpg');
+    background-image: url('kassette5.jpg');
 }
 
 .blog-card:nth-child(3)::before {
-    background-image: url('maxell_lilac_kassette.jpeg');
+    background-image: url('kasette.jpg');
 }
 
 .blog-card::after {
