@@ -372,6 +372,10 @@ body::after {
     background-image: url('kasette.jpg');
 }
 
+.blog-card:nth-child(3)::before {
+    background-image: url('maxell_lilac_kassette.jpeg');
+}
+
 .blog-card::after {
     display: none;
 }
