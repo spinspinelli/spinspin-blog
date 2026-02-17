@@ -365,14 +365,18 @@ body::after {
 
 /* Individuelle Kassettenbilder für verschiedene Posts */
 .blog-card:nth-child(1)::before {
-    background-image: url('maxell_lilac_kassette.jpeg');
+    background-image: url('posts/01-2026_hiroshi_nagai/hiroshi_nagai_post_pictures/hiroshi_nagai_cassette.jpeg');
 }
 
 .blog-card:nth-child(2)::before {
-    background-image: url('kassette5.jpg');
+    background-image: url('maxell_lilac_kassette.jpeg');
 }
 
 .blog-card:nth-child(3)::before {
+    background-image: url('kassette5.jpg');
+}
+
+.blog-card:nth-child(4)::before {
     background-image: url('kasette.jpg');
 }
 
